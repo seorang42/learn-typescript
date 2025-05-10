@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 변환될 자바스크립트의 버전
+    "module": "ESNext", // 변환될 자바스크립트가 사용할 모듈 시스템 (CommonJS / ESNext)
+    "outDir": "dist", // 컴파일된 .js 파일이 저장될 위치
+    "strict": true, // 엄격한 타입 검사 여부
+    "moduleDetection": "force", // 각 파일을 독립된 스코프로 설정
+    "skipLibCheck": true // 타입 정의 파일의 타입 검사를 생략
+  },
+  "include": ["src"] // 컴파일 범위
+}
