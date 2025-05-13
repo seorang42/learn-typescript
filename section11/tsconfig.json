@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "CommonJS",
+    "strict": true,
+    "allowJs": true,
+    "esModuleInterop": true, // React, ReactDOM에서 export default가 없을 때에도 import 허용
+    "jsx": "react-jsx" // jsx 문법 해석을 위한 옵션
+  },
+  "include": ["src"]
+}
