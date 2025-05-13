@@ -1,10 +1,9 @@
 import { useState } from "react";
+import { useTodoDispatch } from "../App";
 
-interface Props {
-  onClickAdd: (text: string) => void;
-}
+export default function Editor() {
+  const dispatch = useTodoDispatch();
 
-export default function Editor({ onClickAdd }: Props) {
   const [text, setText] = useState("");
 
   const onChangeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -15,7 +14,7 @@ export default function Editor({ onClickAdd }: Props) {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
-    onClickAdd(text);
+    dispatch.onClickAdd(text);
     setText("");
   };
 
